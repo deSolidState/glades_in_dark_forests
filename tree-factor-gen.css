@@ -1,0 +1,29 @@
+body {
+  margin: 0 0 0 -4px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+  background-color: black;
+}
+
+#bg {
+  position: relative;
+  z-index: -1;
+}
+
+.blob {
+  position: absolute;
+  object-fit: cover;
+  flex: none;
+  /* margin-left: 17vw; */
+  width: 62.5vw;
+  z-index: 10;
+}
