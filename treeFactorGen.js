@@ -264,7 +264,9 @@ var TreeGenerator = function (canvas, opts) {
     canvas.$el.attr('height', canvas.HEIGHT);
   };
 
-  if (tg.settings.fitScreen) tg.resizeCanvas();
+  if (tg.settings.fitScreen) {
+    tg.resizeCanvas();
+  }
 
   return tg;
 };

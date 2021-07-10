@@ -719,6 +719,12 @@
           tree.start();
         });
 
+        window.addEventListener('resize', resizeCanvas, false);
+
+        function resizeCanvas() {
+          location.reload();
+        }
+
         gui.remember(tree);
       });
     </script>

@@ -80,9 +80,9 @@
 body {
   position: relative;
   overflow: hidden;
-  background: url('./assets/necro/win95-bsod.webp') no-repeat;
+  background: url('../assets/necro/win95-bsod.webp') no-repeat;
   /* background-size: 100%, 100%; */
-  background-size: cover;
+  background-size: 100vw 100vh;
   color: #0f520c;
 }
 

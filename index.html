@@ -535,9 +535,7 @@
     <script type="text/javascript">
       $(document).ready(function () {
         var canvas = $('#bg');
-        var tree = new TreeGenerator(canvas, {
-          fitScreen: true,
-        });
+        var tree = new TreeGenerator(canvas);
         tree.start();
 
         // Setup dat gui to control variables
@@ -575,6 +573,12 @@
         autoInterval.onFinishChange(function () {
           tree.start();
         });
+
+        window.addEventListener('resize', resizeCanvas, false);
+
+        function resizeCanvas() {
+          location.reload();
+        }
 
         gui.remember(tree);
       });
