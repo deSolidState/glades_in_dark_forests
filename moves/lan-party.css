@@ -72,8 +72,8 @@ canvas {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 21;
-  transform: translate(20vw, 60vh) scale(100%);
+  z-index: 30;
+  transform: scale(100%) translate(20vw, 60vh);
 }
 
 .elf5 {
