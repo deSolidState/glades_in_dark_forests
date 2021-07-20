@@ -86,38 +86,62 @@ body {
   color: #0f520c;
 }
 
+/* *** SLIDING PANELS AND IMAGES **************** */
+/* *** SLIDING PANELS AND IMAGES **************** */
+/* *** SLIDING PANELS AND IMAGES **************** */
 .slide {
   object-fit: cover;
-  height: 100vh;
   position: absolute;
 }
 
-/* sliding animation - 9 different types */
-.slide__1 {
+.slide--size {
+  height: 100vh;
+}
+
+.slide--lowest {
+  top: 55vh;
+}
+.slide--bottom {
+  top: 65vh;
+}
+.slide--high {
+  top: 15vh;
+}
+.slide--mid {
+  top: 25vh;
+}
+.slide--lower {
+  top: 45vh;
+}
+
+/* ************************************************ */
+/* **** sliding animation - 9 different types ***** */
+/* ************************************************ */
+.slide--1 {
   animation: 10000ms slide-lft-linear 150ms infinite linear forwards;
 }
-.slide__2 {
+.slide--2 {
   animation: 7000ms slide-lft-hitch 3000ms infinite ease-in-out forwards;
 }
-.slide__3 {
+.slide--3 {
   animation: 10000ms slide-lft-hitch infinite linear forwards;
 }
-.slide__4 {
+.slide--4 {
   animation: 8000ms slide-rgt-linear infinite linear forwards;
 }
-.slide__5 {
+.slide--5 {
   animation: 20000ms slide-lft-hitch infinite ease-in forwards;
 }
-.slide__6 {
+.slide--6 {
   animation: 6000ms slide-rgt-hitch 200ms infinite ease-out forwards;
 }
-.slide__7 {
+.slide--7 {
   animation: 18000ms slide-rgt-linear infinite linear forwards;
 }
-.slide__8 {
+.slide--8 {
   animation: 3000ms slide-lft-hitch 100ms infinite ease-in forwards;
 }
-.slide__9 {
+.slide--9 {
   animation: 6800ms slide-lft-hitch 700ms infinite ease-out forwards;
 }
 
@@ -266,23 +290,50 @@ body {
   transform: scale(200%);
 }
 
-.shrink {
-  height: 25vh;
+@keyframes slide-lft-hitch {
+  0% {
+    transform: translateX(-120%);
+  }
+  75% {
+    transform: translateX(60%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
 }
 
-.shrink__low {
-  top: 45vh;
-}
-.shrink__bottom {
-  top: 65vh;
-}
-.shrink__high {
-  top: 15vh;
-}
-.shrink__mid {
-  bottom: 35vh;
+@keyframes slide-lft-linear {
+  0% {
+    transform: translateX(-550%);
+  }
+  100% {
+    transform: translateX(105%);
+  }
 }
 
+@keyframes slide-rgt-hitch {
+  0% {
+    transform: translateX(120%);
+  }
+  75% {
+    transform: translateX(60%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-rgt-linear {
+  0% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(-55%);
+  }
+}
+
+/* original */
+/* 
 @keyframes slide-lft-hitch {
   0% {
     transform: translateX(-120%);
@@ -323,4 +374,4 @@ body {
   100% {
     transform: translateX(-105%);
   }
-}
+} */
