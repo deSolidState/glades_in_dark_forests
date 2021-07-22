@@ -571,7 +571,7 @@
 
 .file-links {
   padding: 0 15px;
-  max-height: 178px;
+  height: 178px;
   overflow: auto;
 }
 
