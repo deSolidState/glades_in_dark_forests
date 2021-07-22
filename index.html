@@ -562,7 +562,7 @@
         window.addEventListener('resize', resizeCanvas, false);
 
         function resizeCanvas() {
-          location.reload();
+          window.location.href = window.location.href;
         }
 
         gui.remember(tree);

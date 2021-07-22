@@ -232,6 +232,7 @@ var TreeGenerator = function (canvas, opts) {
    * @return {void}
    */
   function resizeCanvas(e) {
+    console.log('in the resize');
     canvas.WIDTH = window.innerWidth;
     canvas.HEIGHT = window.innerHeight;
 
@@ -257,6 +258,7 @@ var TreeGenerator = function (canvas, opts) {
    * @return {void}
    */
   tg.resizeCanvas = function () {
+    console.log('in treefactorgen, in tg.resizeCanvas');
     canvas.WIDTH = window.innerWidth;
     canvas.HEIGHT = window.innerHeight;
 
