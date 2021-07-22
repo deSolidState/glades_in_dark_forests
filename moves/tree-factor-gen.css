@@ -27,3 +27,34 @@ body {
   width: 62.5vw;
   z-index: 10;
 }
+
+.info {
+  position: absolute;
+  z-index: 20;
+  width: 20vw;
+  animation: fly-info 100000ms linear infinite;
+  flex: none;
+}
+
+.info img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@keyframes fly-info {
+  0% {
+    transform: translate(-41vw, 0vh);
+  }
+  25% {
+    transform: translate(0vw, -47vh);
+  }
+  50% {
+    transform: translate(41vw, 0vh);
+  }
+  75% {
+    transform: translate(0vw, 47vh);
+  }
+  100% {
+    transform: translate(-41vw, 0vh);
+  }
+}
