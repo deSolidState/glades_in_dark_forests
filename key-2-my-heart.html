@@ -602,6 +602,30 @@
       </div>
     </div>
 
+    <div gui="xp" class="window info">
+      <div class="title-bar">
+        <div class="title-bar-text">Helpful Instructions</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="window-body">
+        <ul class="instr">
+          <li>insert flash drive</li>
+          <li>search the folders</li>
+          <li>click on links to download media to flash drive</li>
+          <li>scan qr code to email us stuff</li>
+        </ul>
+        <img
+          src="assets/browser/mailto-qr.png"
+          alt="qr code to email media to archive"
+        />
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
       type="text/javascript"
@@ -653,7 +677,7 @@
         window.addEventListener('resize', resizeCanvas, false);
 
         function resizeCanvas() {
-          location.reload();
+          window.location.href = window.location.href;
         }
 
         gui.remember(tree);

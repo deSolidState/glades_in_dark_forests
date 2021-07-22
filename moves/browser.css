@@ -606,6 +606,11 @@
   width: 40px;
 }
 
+.instr {
+  list-style-type: none;
+  padding: 2px;
+}
+
 .index-of h3 {
   margin: 0 80px;
 }
