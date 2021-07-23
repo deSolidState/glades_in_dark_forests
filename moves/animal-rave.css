@@ -372,7 +372,7 @@ body {
   left: 0;
 
   transform: translate(80vw, 48vh) scale(80%);
-  z-index: 50;
+  z-index: 30;
 }
 
 .hamster--spin {
@@ -455,13 +455,84 @@ body {
   position: absolute;
 }
 
+/****************************** INFO WINDOW  ********************/
+@keyframes fly-info--rave {
+  0% {
+    transform: translate(0vw, 50vh);
+    z-index: 20;
+  }
+  25% {
+    transform: translate(50vw, -10vh) scale(50%);
+    z-index: -5;
+  }
+  50% {
+    transform: translate(85vw, 50vh) scale(100%);
+    z-index: 20;
+  }
+  75% {
+    transform: translate(50vw, 95vh) scale(200%);
+    z-index: 100;
+  }
+  100% {
+    transform: translate(0vw, 50vh) scale(100%);
+    z-index: 20;
+  }
+}
+
+.info--rave {
+  position: absolute;
+  width: 20vw;
+  animation: fly-info--rave 100000ms linear infinite;
+  flex: none;
+}
+
+.info--rave img {
+  object-fit: contain;
+  width: 32.5%;
+}
+
+/* @keyframes fly-info--rave {
+  0% {
+    transform: translate(0vw, 50vh);
+  }
+  25% {
+    transform: translate(50vw, 0vh);
+  }
+  50% {
+    transform: translate(100vw, 50vh);
+  }
+  75% {
+    transform: translate(0vw, 47vh);
+  }
+  100% {
+    transform: translate(-41vw, 0vh);
+  }
+} */
+
+.instr--rave {
+  list-style-type: none;
+  padding: 2px 0px;
+  padding-left: 5px;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ed5f61;
+}
+
+.win-body-cntr {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* border: 3px solid blue; */
+}
+
 /* the .shake breaks this?!!? */
 /* @media screen and (max-width: 925px) {
   .background {
     height: 70vh;
     width: unset;
   }
-
+  
   .background img {
     height: 100%;
   }
