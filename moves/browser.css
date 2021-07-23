@@ -608,7 +608,19 @@
 
 .instr {
   list-style-type: none;
-  padding: 2px;
+  padding: 2px 0px;
+  padding-left: 12px;
+  width: 65%;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: rgb(51, 51, 255);
+}
+
+.win-body-cntr {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* border: 3px solid blue; */
 }
 
 .index-of h3 {
