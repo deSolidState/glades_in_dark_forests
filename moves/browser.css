@@ -596,7 +596,8 @@
 
 .file-links div span:nth-child(3) {
   display: inline-block;
-  width: 23%;
+  width: 22.5%;
+  margin-left: 0.5%;
   /* border: 1px solid red; */
 }
 
