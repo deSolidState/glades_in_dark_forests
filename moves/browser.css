@@ -617,6 +617,10 @@
   color: rgb(51, 51, 255);
 }
 
+#spacem {
+  letter-spacing: 3px;
+}
+
 .win-body-cntr {
   display: flex;
   flex-direction: row-reverse;
