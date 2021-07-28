@@ -2,7 +2,7 @@
 
 const whiteFlowers =
   document.getElementsByClassName('garden__plot--20')[0].children;
-const purpleFlower = document.getElementById('lone-purple');
+// const purpleFlower = document.getElementById('lone-purple');
 const yellowFlowers =
   document.getElementsByClassName('garden__plot--8')[0].children;
 
@@ -14,7 +14,7 @@ for (let flower of whiteFlowers) {
   }
 }
 
-// adding listeners to garden plot 20 opaque white flowers
+// adding listeners to garden plot 4 opaque yellow flowers - left hand column
 console.log(yellowFlowers.length);
 for (let flower = 0; flower < yellowFlowers.length; flower++) {
   console.log(flower, flower % 2);
@@ -24,8 +24,8 @@ for (let flower = 0; flower < yellowFlowers.length; flower++) {
   }
 }
 
-purpleFlower.addEventListener('click', goDeeper);
-purpleFlower.classList.add('glorp');
+// purpleFlower.addEventListener('click', goDeeper);
+// purpleFlower.classList.add('glorp');
 
 function goHome(e) {
   window.location = './index.html';

@@ -161,6 +161,12 @@ body {
   flex: none;
 }
 
+.glorp:hover {
+  outline: 5px inset rgba(134, 219, 238, 0.8);
+  border-radius: 50%;
+  cursor: url('../assets/bees/bee.cur'), pointer;
+}
+
 .garden__plot--8 {
   margin-right: 4vw;
   display: flex;
@@ -194,22 +200,6 @@ body {
   /* object-fit: cover; */
   /* outline: 3px dotted lime; */
   height: 4vw;
-  cursor: url('./assets/bees/bee.cur'), auto;
-}
-
-.garden__flower--white {
-  /* width: 5%; */
-  /* object-fit: cover; */
-  /* outline: 3px dotted lime; */
-}
-
-.garden__flower img {
-  /* width: 100%; */
-}
-
-.glorp:hover {
-  outline: 5px inset rgba(134, 219, 238, 0.8);
-  border-radius: 50%;
 }
 
 .welcome {
@@ -315,16 +305,6 @@ body {
     transform: translate(-41vw, 0vh);
   }
 }
-/* 
-.instr {
-  list-style-type: none;
-  padding: 0;
-  font-size: 2rem;
-  position: absolute;
-  z-index: 10;
-  color: #ed5f61;
-  margin: 0 auto;
-} */
 
 .instr--bees {
   list-style-type: none;
