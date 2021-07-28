@@ -30,7 +30,7 @@ var TreeGenerator = function (canvas, opts) {
     minSleep: 3, // Min sleep time (For the animation)
     colorful: false, // Use colors for new trees
     speed: 1.99, // Movement speed
-    fastMode: true, // Fast growth mode
+    fastMode: false, // Fast growth mode
     indicateNewBranch: false, // Display a visual indicator when a new branch is born
     // ---------------------------------------------------
     fadeOut: true, // Fade slowly to black

@@ -558,6 +558,7 @@
 
 .fake-filters a {
   display: inline-block;
+  font-size: 14px;
 }
 .fake-filters a:nth-child(1) {
   width: 29%;
@@ -573,6 +574,7 @@
   padding: 0 15px;
   height: 178px;
   overflow: auto;
+  font-size: 14px;
 }
 
 .file-links img {
