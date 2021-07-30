@@ -458,24 +458,24 @@ body {
 /****************************** INFO WINDOW  ********************/
 @keyframes fly-info--rave {
   0% {
-    transform: translate(0vw, 50vh);
-    z-index: 20;
-  }
-  25% {
     transform: translate(50vw, -10vh) scale(50%);
     z-index: -5;
   }
-  50% {
+  25% {
     transform: translate(85vw, 50vh) scale(100%);
     z-index: 20;
   }
-  75% {
+  50% {
     transform: translate(50vw, 95vh) scale(200%);
     z-index: 100;
   }
-  100% {
-    transform: translate(0vw, 50vh) scale(100%);
+  75% {
+    transform: translate(0vw, 50vh);
     z-index: 20;
+  }
+  100% {
+    transform: translate(50vw, -10vh) scale(50%);
+    z-index: -5;
   }
 }
 

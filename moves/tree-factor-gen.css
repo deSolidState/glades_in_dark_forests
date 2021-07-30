@@ -44,18 +44,18 @@ body {
 
 @keyframes fly-info {
   0% {
-    transform: translate(-41vw, 0vh);
-  }
-  25% {
     transform: translate(0vw, -47vh);
   }
-  50% {
+  25% {
     transform: translate(41vw, 0vh);
   }
-  75% {
+  50% {
     transform: translate(0vw, 47vh);
   }
-  100% {
+  75% {
     transform: translate(-41vw, 0vh);
+  }
+  100% {
+    transform: translate(0vw, -47vh);
   }
 }
