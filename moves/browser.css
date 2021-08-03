@@ -614,7 +614,7 @@
   padding: 2px 0px;
   padding-left: 12px;
   width: 65%;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
 }
 
@@ -623,10 +623,6 @@
 }
 
 .win-body-cntr {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  /* border: 3px solid blue; */
 }
 
 .index-of h3 {
