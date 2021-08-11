@@ -168,7 +168,7 @@ body {
 .glorp:hover {
   outline: 5px inset rgba(134, 219, 238, 0.8);
   border-radius: 50%;
-  cursor: url('../assets/bees/bee.cur'), pointer;
+  cursor: url('../assets/bees/bee.png'), pointer;
 }
 
 .garden__plot--8 {
