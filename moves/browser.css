@@ -574,11 +574,11 @@
   padding: 0 15px;
   height: 178px;
   overflow: auto;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .file-links img {
-  height: 18px;
+  height: 28px;
   vertical-align: middle;
   margin-right: 7px;
   padding: 2px;
