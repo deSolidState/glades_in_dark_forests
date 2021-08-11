@@ -1,3 +1,11 @@
+* {
+  cursor: url('../assets/browser/big-arrow.png'), pointer;
+}
+
+a:hover {
+  cursor: url('../assets/browser/big-hand.png'), pointer;
+}
+
 .dropdown {
   outline: 1.5px outset white;
   padding: 4px 0;
@@ -572,7 +580,7 @@
 
 .file-links {
   padding: 0 15px;
-  height: 178px;
+  height: 250px;
   overflow: auto;
   font-size: 18px;
 }
@@ -587,6 +595,7 @@
 .file-links div {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .file-links div a:nth-child(2) {

@@ -11,6 +11,15 @@ body {
 }
 
 /****************************** BACKGROUND ********************/
+* {
+  cursor: url('../assets/browser/big-arrow.png'), pointer;
+}
+
+a img:hover {
+  cursor: url('../assets/browser/big-hand.png'), pointer;
+
+}
+
 .background {
   position: absolute;
   width: 100vw;

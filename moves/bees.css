@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+* {
+  cursor: url('../assets/browser/big-arrow.png'), pointer;
+}
+
 body {
   position: relative;
   width: 100vw;

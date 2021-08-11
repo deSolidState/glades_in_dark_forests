@@ -2,6 +2,15 @@
   margin: 0;
 }
 
+* {
+  cursor: url('../assets/browser/big-arrow.png'), pointer;
+}
+
+a img:hover {
+  cursor: url('../assets/browser/big-hand.png'), pointer;
+
+}
+
 html,
 body {
   box-sizing: border-box;
@@ -219,16 +228,3 @@ canvas {
     -webkit-filter: contrast(2);
   }
 }
-
-/* 
-  example: gif with the class - hamster that you want in
-           lower right part of screen and half the size
-  
-  .hamster {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 20;
-  transform: translate(75vw, 75vh) scale(50%);
-}
-*/
